@@ -1,0 +1,69 @@
+// Colors
+$form_color_normal: #aab2bd;
+$form_color-default: #fff;
+$form_color_brand: #3bafda;
+
+// Background
+$form_bg_normal: #aab2bd;
+$form_bg_default: #fff;
+$form_bg_primary: #3bafda;
+$form_bg_succes: #8cc152;
+$form_bg_warning: #f6bb42;
+$form_bg_danger: #da4453;
+
+// Border
+$form_border_normal: 1px solid $form_bg_normal;
+$form_border_default: 1px solid $form_bg_default;
+$form_border_primary: 1px solid $form_bg_primary;
+$form_border_succes: 1px solid $form_bg_succes;
+$form_border_warning: 1px solid $form_bg_warning;
+$form_border_danger: 1px solid $form_bg_danger;
+
+// Padding
+$form_padding: 10px;
+
+// Font-size
+$form_font-size_lg: 12px;
+$form_font-size_md: 10px;
+$form_font-size_sm: 8px;
+
+// Pill
+$form_border-radius_lg: 15px;
+$form_border-radius_sm: 5px;
+
+@mixin form-variants ($color, $bg) {
+	color: $color;
+	background: $bg;
+}
+
+@mixin form-size ($padding, $font-size, $border, $border-radius) {
+	padding: $padding;
+	font-size: $font-size;
+	border: $border;
+	border-radius: $border-radius;
+}
+input {
+	width: 100%;
+}
+.form__input--normal {
+	@include form-variants ($form_color_normal, $form_bg_default);
+	@include form-size ($form_padding, $form_font-size_lg, $form_border_normal, $form_border-radius_sm);
+}
+.form__input--pill {
+	@include form-variants ($form_color_normal, $form_bg_default);
+	@include form-size ($form_padding, $form_font-size_lg, $form_border_normal, $form_border-radius_lg);
+}
+.succes label {
+	color: $form_bg_succes;
+}
+.form__input--succes {
+	@include form-variants ($form_color_normal, $form_bg_default);
+	@include form-size ($form_padding, $form_font-size_lg, $form_border_succes, $form_border-radius_sm);
+}
+.error label {
+	color: $form_bg_danger;
+}
+.form__input--error {
+	@include form-variants ($form_color_normal, $form_bg_default);
+	@include form-size ($form_padding, $form_font-size_lg, $form_border_danger, $form_border-radius_sm);
+}

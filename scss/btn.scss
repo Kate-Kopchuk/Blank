@@ -1,0 +1,77 @@
+// Colors
+$btn_color_normal:       #000;
+$btn_color_default:      #fff;
+
+// Background
+$btn_bg_normal:          #aab2bd;
+$btn_bg_default:         #fff;
+$btn_bg_primary:         #3bafda;
+$btn_bg_succes:          #8cc152;
+$btn_bg_warning:         #f6bb42;
+$btn_bg_danger:          #da4453;
+
+// Border
+$btn_border_normal: 1px solid $btn_bg_normal;
+$btn_border_default: 1px solid $btn_bg_default;
+$btn_border_primary: 1px solid $btn_bg_primary;
+$btn_border_succes: 1px solid $btn_bg_succes;
+$btn_border_warning: 1px solid $btn_bg_warning;
+$btn_border_danger: 1px solid $btn_bg_danger;
+
+// Padding
+$btn_padding_lg: 12px 50px;
+$btn_padding_md: 8px 7px;
+$btn_padding_sm: 5px 7px;
+
+// Font-size
+$btn_font-size_lg: 12px;
+$btn_font-size_md: 10px;
+$btn_font-size_sm: 8px;
+
+// Width
+$min-width: null;
+
+// Pill
+$btn_pill_lg: 15px;
+$btn_pill_md: 10px;
+$btn_pill_sm: 5px;
+
+@mixin btn-variants ($color, $bg) {
+	color: $color;
+	background: $bg;
+	&:hover,
+	&:active {
+		background: darken($bg,12%);
+	}
+}
+@mixin btn-size ($padding, $font-size, $min-width, $border, $border-radius) {
+	padding: $padding;
+	font-size: $font-size;
+	min-width: $min-width;
+	border: $border;
+	border-radius: $border-radius;
+}
+.btn--normal {
+	@include btn-variants ($btn_color_normal, $btn_bg_normal);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_normal, $btn_pill_lg);
+}
+.btn--default {
+	@include btn-variants ($btn_color_normal, $btn_bg_default);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_default, $btn_pill_lg);
+}
+.btn--primary {
+	@include btn-variants ($btn_color_default, $btn_bg_primary);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_primary, $btn_pill_lg);
+}
+.btn--succes {
+	@include btn-variants ($btn_color_default, $btn_bg_succes);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_succes, $btn_pill_lg);
+}
+.btn--warning {
+	@include btn-variants ($btn_color_default, $btn_bg_warning);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_warning, $btn_pill_lg);
+}
+.btn--danger {
+	@include btn-variants ($btn_color_default, $btn_bg_danger);
+	@include btn-size ($btn_padding_lg, $btn_font-size_lg, $min-width, $btn_border_danger, $btn_pill_lg);
+}
