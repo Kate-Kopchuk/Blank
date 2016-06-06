@@ -59,10 +59,10 @@ a:hover {
 .btn--normal {
   color: #000;
   background: #aab2bd;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #aab2bd;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--normal:hover, .btn--normal:active {
@@ -72,10 +72,10 @@ a:hover {
 .btn--default {
   color: #000;
   background: #fff;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #fff;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--default:hover, .btn--default:active {
@@ -85,10 +85,10 @@ a:hover {
 .btn--primary {
   color: #fff;
   background: #3bafda;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #3bafda;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--primary:hover, .btn--primary:active {
@@ -98,10 +98,10 @@ a:hover {
 .btn--succes {
   color: #fff;
   background: #8cc152;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #8cc152;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--succes:hover, .btn--succes:active {
@@ -111,10 +111,10 @@ a:hover {
 .btn--warning {
   color: #fff;
   background: #f6bb42;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #f6bb42;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--warning:hover, .btn--warning:active {
@@ -124,10 +124,10 @@ a:hover {
 .btn--danger {
   color: #fff;
   background: #da4453;
-  padding: 12px 50px;
+  padding: 2px 50px;
   font-size: 12px;
   border: 1px solid #da4453;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .btn--danger:hover, .btn--danger:active {
